@@ -40,7 +40,7 @@ def main(dfs_tables, dfs_excels):
 
 
     final_df = po_data.copy()
-
+    print (final_df.head())
     final_df['Vendor ID'] = final_df['po_vendor'].str.split(" ").str[0]
     final_df['Placement Batch'] = final_df['scm_po_scm_memo'].map(memo_mapping.set_index("Memo (Main)")["Summary Filter"]).fillna("Other")
     final_df['OTIF Focus'] = "" ## needs work

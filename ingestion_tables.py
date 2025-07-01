@@ -691,6 +691,7 @@ def main(creds):
     
     po_data = fetch_from_redshift(user, password, database, host, port, po_sql_query)
 
+    
     pl_data = fetch_from_redshift(user, password, database, host, port, pl_sql_query)
 
     batch_data = fetch_from_redshift(user, password, database, host, port, batch_sql_query)
