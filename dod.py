@@ -8,5 +8,5 @@ def main(final_df, dod_data):
     ## this is where join with final df will happen
     ## If dod_df returns days count column for each stage then a combined days_bucket will be required to be calculated before joining
     # final_df['Days Bucket'] = final_df['po_razin_id'].map(dod_df.set_index('po_razin_id')['days_bucket']).fillna(0)
-    ram = 1 + 1
+    
     return final_df

@@ -1,1 +1,66 @@
+# Credentials
 creds.txt
+
+# Virtual environments
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Excel files (data and test files)
+*.xlsx
+*.xls
+~$*.xlsx
+~$*.xls
+
+# Generated output files
+outputs/
+tat_calculator/outputs/
+
+# Large log files
+*.log
+outputs/logs/
+tat_calculator/outputs/logs/
+
+# Data files
+*.csv
+static/
+!requirements.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
