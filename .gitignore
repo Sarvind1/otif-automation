@@ -1,5 +1,8 @@
-# Credentials
+# Credentials and secrets
 creds.txt
+.env
+.env.local
+.env.*.local
 
 # Virtual environments
 .venv/
@@ -27,36 +30,11 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# Environment files
-.env
-.env.local
-.env.*.local
-
 # OS files
 .DS_Store
 Thumbs.db
 .AppleDouble
 .LSOverride
-
-# Excel files (data and test files)
-*.xlsx
-*.xls
-~$*.xlsx
-~$*.xls
-
-# Generated output files
-outputs/
-tat_calculator/outputs/
-
-# Large log files
-*.log
-outputs/logs/
-tat_calculator/outputs/logs/
-
-# Data files
-*.csv
-static/
-!requirements.txt
 
 # IDE
 .vscode/
@@ -64,3 +42,38 @@ static/
 *.swp
 *.swo
 *~
+
+# Test and data files (Excel)
+*.xlsx
+*.xls
+~$*.xlsx
+~$*.xls
+
+# Generated output files and logs
+outputs/
+tat_calculator/outputs/
+*.log
+
+# Generated data files
+*.csv
+!static/asin_static_payment_status.csv
+!static/default_mappings.xlsx
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Static data directory (generated outputs, not source configs)
+static/*
+!static/asin_static_payment_status.csv
+!static/default_mappings.xlsx
+
+# Large test data files
+tat_calculator/ts_big.xlsx
+tat_calculator/ts_big\ copy.xlsx
+tat_calculator/ts_small*.xlsx
+otif_py_current_QC.xlsx
